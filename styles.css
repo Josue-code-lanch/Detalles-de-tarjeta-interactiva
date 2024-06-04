@@ -1,0 +1,126 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tarjetas {
+  flex: 0 0 50%;
+  margin-right: 50px;
+}
+
+
+.background-tarjetas {
+  width: 60%;
+  height: 100vh;
+}
+
+.datos-tarjeta-frente img {
+  position: absolute;
+  top: 75px;
+  left: 100px;
+  width: 30%;
+  min-width: 27%;
+}
+
+.datos-tarjeta-reverso img {
+  position: absolute;
+  top: 250px;
+  left: 150px;
+  width: 30%;
+}
+
+
+/* FORM */
+#form {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  position: relative;
+  bottom: 100px;
+  font-size: 10px;
+}
+
+#form label {
+  color: hsl(278, 68%, 11%);
+  font-size: 9px;
+  margin-bottom: 8px;
+}
+
+#form, input, button {
+  width: 60%;
+  margin-bottom: 15px;
+}
+
+.date {
+  display: flex;
+  flex-direction: row;
+}
+
+.date input {
+  margin-right: 10px;
+  width: 40px;
+}
+
+.cvc input {
+  width: 100px;
+}
+
+input, button {
+  width: 50%;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  padding: 7px;
+  border: 1px solid hsl(278, 66%, 11%);
+}
+
+input {
+  border-radius: 5px;
+  padding: 7px;
+  border: 1px solid hsl(270, 3%, 87%);
+}
+
+input:active {
+  border-image: linear-gradient(
+    to right,
+    hsl(249, 99%, 64%),
+    hsl(278, 94%, 30%)
+  );
+  border-image-slice: 1;
+}
+
+button {
+  border: 1px solid hsl(278, 68%, 11%);
+  padding: 10px;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(278, 68%, 11%);
+  cursor: pointer;
+  width: 50%;
+}
+
+.mensaje-exito {
+  display: none;
+}
+
+
+/* MEDIA QUERYS */
+@media screen and (min-width: 320px) and (max-width: 376px) {
+  
+}
